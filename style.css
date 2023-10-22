@@ -1,0 +1,82 @@
+@import "compass/css3";
+
+*, html, body{
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+
+.banner{
+  height: 80%;
+  background-image: /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/url(drop_center.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.intro{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 60vh;
+}
+.encompass{
+  min-height: 20%;
+}
+
+.side-bar{
+  width: 25%;
+  float: left;
+  padding-top: 5%;
+  background-color: rgba(250,181,10,255);
+  position: relative;
+}
+@media (max-width: 800px) {
+  .side-bar{
+    min-height: 300vh;
+  }
+}
+
+.side-bar p{
+  color:white;
+  text-align: center;
+  margin-left: 5px;
+  position: fixed;
+}
+
+.main{
+  width: 75%;
+  float: right;
+  padding-top: 2%;
+}
+
+.domaines{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.legal,.medical, .social{
+  width: 33%;
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  .domaines {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .legal,.medical, .social{
+    width: 100%;
+    margin-left: 5%;
+  }
+
+}
+
+.fa-solid{
+  margin-left: 45%;
+  font-size:20px;
+  color:#1d5894;
+}
